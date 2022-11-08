@@ -27,3 +27,8 @@ Start the server
   npm run start
 ```
 
+
+## Authors
+
+- [@octokatherine](https://www.github.com/Leon24k)
+
