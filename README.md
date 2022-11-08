@@ -1,4 +1,4 @@
-# pemesananMakanan
+# Pemesanan Makanan
 Web pemesanan ini dibuat dengan ui dan ux yang simple sehingga tidak sulit digunakan
 
 ## Run Locally
@@ -30,5 +30,5 @@ Start the server
 
 ## Authors
 
-- [@octokatherine](https://www.github.com/Leon24k)
+- [@Leon24k](https://www.github.com/Leon24k)
 
