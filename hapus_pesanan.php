@@ -1,12 +1,15 @@
 <?php 
-session_start();
- 
-$id_menu = $_GET["id_menu"];
+require_once 'auth.php';
+require_login();
 
-unset($_SESSION["pesanan"][$id_menu]);
+$id_menu = (int)($_GET["id_menu"] ?? 0);
 
-echo "<script>alert('Produk telah dihapus');</script>"; 
-echo "<script>location= 'pesanan_pembeli.php'</script>";
+if ($id_menu > 0 && isset($_SESSION["pesanan"][$id_menu])) {
+    unset($_SESSION["pesanan"][$id_menu]);
+    echo "<script>alert('Menu telah dihapus dari keranjang pesanan.'); window.location.href='pesanan_pembeli.php';</script>";
+    exit;
+}
 
-
+header('Location: pesanan_pembeli.php');
+exit;
 ?>
